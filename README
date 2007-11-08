@@ -1,0 +1,25 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2065
+
+Compute MD5 or SHA1 checksum of entire file or range of lines.
+Store checksum in buffer variable or in user-specified
+register.  Uses external programs to compute checksums;
+currently supports GNU md5sum, GNU sha1sum, and OpenSSL.
+If you are a Windows user, you should install GNU CoreUtils
+for Windows
+(http://gnuwin32.sourceforge.net/downlinks/coreutils.php)
+or Win32 OpenSSL
+(http://www.slproweb.com/products/Win32OpenSSL.html)
+
+Usage:
+:{range}Md5 [register] - displays MD5 checksum for given range
+of lines (default is entire file) and stores in b:md5sum and
+the register named as an argument.
+:{range}Sha1 [register] - displays SHA1 checksum for given
+range of lines (default is entire file) and stores in
+b:sha1sum and the register named as an argument.
+<Leader>md - displays MD5 checksum for entire file or visual
+selection and stores in b:md5sum
+<Leader>sh - displays SHA1 checksum for entire file or visual
+selection and stores in b:sha1sum
+
+
